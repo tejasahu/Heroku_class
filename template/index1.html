@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="{{url_for('/predict')}} " method="post">
+            <input type="text" name="experience" placeholder="experience" required="required"/>
+            <input type="text" name="test_score(out of 10)" placeholder="test_score(out of 10)" required="required"/>
+            <input type="text" name="interview_score(out of 10)" placeholder="interview_score(out of 10)" required="required"/>
+            
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+
+        </form>
+          <br>
+          <br>
+          <br>
+          {{prediction_text}}
+    </body>
+</html>
